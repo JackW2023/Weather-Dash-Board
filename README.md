@@ -14,6 +14,9 @@ My WeatherApp is a web application designed to provide real-time weather informa
 - [Credits](#credits)
 - [License](#license)
 - [Snap Shot](#snap-shot)
+- [Credits](#credits)
+- [License](#license)
+- [Badges](#badges)
 
 <br/>
 
@@ -52,4 +55,12 @@ To use WeatherApp:
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE.txt).
+This project is licensed under the [MIT License](LICENSE).
+
+<br/>
+
+## Badges
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![JavaScript](https://img.shields.io/badge/language-JavaScript-yellow)
+![API](https://img.shields.io/badge/API-OpenWeatherMap-blue)
