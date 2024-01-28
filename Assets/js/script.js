@@ -1,14 +1,28 @@
+// Creating Constant to store the data I get from the HTML element by either using .getElementById or .querySelector
 const userInput=document.getElementById("user-input")
 const searchBtn=document.getElementById('search-btn')
 const weatherContainer=document.querySelector(".weather-container")
 const forecastContainer=document.querySelector(".forecast-container")
 
+// Declare constant for holding API keys
 const apiKey = "5762345ebb0694edfc99339cfda43537";
 let cityArray=[]
 
-
+// The function "function getWeather (city){}"
+    // Defines a function names getWeather
+    // get weather data for specified city
+    // takes in one argument city
+// The constant "url:..."
+    // construct a URL string for OpenWeatherMap API
+    // include city names "q=${city }" with this input
+    // include API keys "${apiKey}" with this input
+// The "fetch(url)" Function
+    // Using the build-in Function "fetch" to make a network request through the constant I declare "url"
+    // "fetch" is used to make HTTP requests in JavaScript
+// The ".then(response => response.json())"
+    // 
 function getWeather (city){
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city }&appid=${apiKey}&units=metric`
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
     fetch(url)
     .then(response => response.json())
     .then((data)=>{
@@ -21,6 +35,9 @@ function getWeather (city){
     })
 }
 
+// Same thing with the getWeather function Difference:
+    // Passing in "lat = latitude", "lon=longitude" from if the user were to use that for location
+    // Getting the data and everything else is very similar to getWeather function
 function getForecast(lat, lon){
     const url=` https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`
     fetch(url)
