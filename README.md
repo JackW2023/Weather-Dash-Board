@@ -40,7 +40,7 @@ To use WeatherApp:
 <br/>
 
 ## Snap Shot
-![WeatherApp Screenshot](Assets/images/screenshot.png)
+![WeatherApp Screenshot](Assets/images/screenshot.PNG)
 
 <br/>
 
